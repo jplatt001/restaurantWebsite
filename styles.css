@@ -1,0 +1,186 @@
+html, body {
+    background: #ebccc2;
+    color: rgb(100, 40, 0);
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0; 
+}
+
+#home {
+    background-image: url('images/restaurant.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    height: 100vh; 
+    color: white; 
+    margin: 0; 
+    padding: 0; 
+}
+
+
+header {
+    background: #0e0401;
+    color: rgb(161, 80, 26);
+    margin: 0;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 30px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links li a {
+    color: rgb(161, 80, 26);
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.menu-items img {
+    width: 150px; 
+    height: auto; 
+    border-radius: 10px; 
+    display: block; 
+    margin: 10px auto; 
+}
+
+
+.item {
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.slider img {
+    width: 100%;
+    max-width: 500px;
+    display: none;
+}
+
+.slider img:first-child {
+    display: block;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+    .hamburger {
+        display: block;
+    }
+}
+
+.contact h2,
+.menu h2,
+.about h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.about p{
+    width: 380px;
+    font-size: 20px;
+}
+
+.gallery {
+    text-align: center;
+    padding: 20px;
+}
+
+.gallery h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+    overflow: hidden;
+}
+
+.slider img {
+    width: 400px; 
+    height: 400px; 
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.contact{
+    text-align: center;
+}
+
+iframe{
+    padding: 40px;
+}
+
+footer{
+    background: #0e0401;
+    color: rgb(161, 80, 26);
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; 
+    width: 100%;
+}
+
+footer a {
+    color: #485fac;
+    text-decoration: none; 
+    font-weight: bold; 
+}
