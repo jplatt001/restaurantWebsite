@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelector(".nav-links");
     
     hamburger.addEventListener("click", function () {
-        navLinks.style.display = navLinks.style.display === "flex" ? "none" : "flex";
+        navLinks.classList.toggle("open");
+        navLinks.style.display = navLinks.style.adisplay === "flex" ? "none" : "flex";
     });
 
     let currentSlide = 0;
