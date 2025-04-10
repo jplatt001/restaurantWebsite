@@ -12,10 +12,10 @@
         <nav>
             <div class="logo">The Burger Den</div>
             <ul class="nav-links">
-                <li><a href= "/restaurantWebsite/home"> Home</a></li>
-                <li><a href="/restaurantWebsite/menu">Menu</a></li>
-                <li><a href="/restaurantWebsite/about">About</a></li>
-                <li><a href="/restaurantWebsite/contact">Contact</a></li>
+                <li><a href= "/home.html"> Home</a></li>
+                <li><a href="/menu.html">Menu</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
             </ul>
             <div class="hamburger">&#9776;</div>
         </nav>
@@ -23,17 +23,43 @@
     <section id="menu" class="menu">
         <h2>Menu</h2>
         <div class="menu-items">
-            <div class="item"><h3>Cheese Burger</h3><img src="images/cheeseBurger.jpg" alt="Cheese Burger"><p>$10</p></div>
-            <div class="item"><h3>Bacon Burger</h3><img src="images/baconBurger.jpg" alt="Bacon Burger"><p>$12</p></div>
-            <div class="item"><h3>Chicken Sandwich</h3><img src="images/chickenSandwich.jpg" alt="Chicken Sandwich"><p>$8</p></div>
+          <div class="item" data-name="Cheese Burger" data-price="10">
+            <h3>Cheese Burger</h3>
+            <img src="images/cheeseBurger.jpg" alt="Cheese Burger">
+            <p>$10</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+      
+          <div class="item" data-name="Bacon Burger" data-price="12">
+            <h3>Bacon Burger</h3>
+            <img src="images/baconBurger.jpg" alt="Bacon Burger">
+            <p>$12</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+      
+          <div class="item" data-name="Chicken Sandwich" data-price="9">
+            <h3>Chicken Sandwich</h3>
+            <img src="images/chickenSandwich.jpg" alt="Chicken Sandwich">
+            <p>$9</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
         </div>
-    </section>
+      </section>
+      
+      
+      <section class="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p><strong>Total:</strong> $<span id="cart-total">0</span></p>
+        <button id="clear-cart">Clear Cart</button>
+      </section>
+      
 
     <footer>
         <p>Follow us on: 
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a> | 
             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-        </p
+        </p>
         <p>Business Hours: 9 AM - 10 PM</p>
     </footer>
 </body>
