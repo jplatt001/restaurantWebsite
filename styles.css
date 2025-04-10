@@ -184,3 +184,35 @@ footer a {
     text-decoration: none; 
     font-weight: bold; 
 }
+
+
+.cart {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    border-radius: 10px;
+  }
+  
+  .cart h2 {
+    text-align: center;
+  }
+  
+  #cart-items {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #cart-items li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .cart button {
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
